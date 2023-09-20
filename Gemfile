@@ -43,6 +43,7 @@ group :development do
   gem 'pry'
   gem 'pry-byebug'
   gem 'web-console'
+  gem 'solargraph'
   # gem "rack-mini-profiler"
   # gem "spring"
 end
