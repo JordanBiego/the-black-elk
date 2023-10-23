@@ -1,0 +1,101 @@
+.field_with_errors { display: inline; }
+
+.top60 { margin-top:60px; }
+.top1-5em { margin-top:1.5em; }
+
+.logo {
+  width: 50px;
+}
+
+.logo2 {
+  width: 312px;
+}
+
+.logo_gcbrasil{
+  height: 140px;
+}
+
+.logo_alxinvest {
+  margin-top: 100px;
+  width: 400px;
+}
+
+.creditag {
+  margin-top: 100px;
+  height: 300px
+}
+
+.logo_seara {
+  
+  height: 246px
+}
+.login-box input[placeholder], [placeholder], [placeholder] {
+    color: rgb(0, 0, 0) !important;
+}
+
+#page-title {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    position: relative;
+    min-height: 95%;
+}
+
+body {
+    margin-bottom: 20px;
+      background: #ccc;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px; //same height as the margin to the bottom of the body
+}
+
+a.navbar-brand:hover {
+    background: none;
+}
+
+span.hst-atual {
+    margin-left: 0.5em;
+    text-align: right;
+    float: right;
+}
+
+.sidebar-nav > ul .serasamenu {
+    white-space: normal;
+}
+
+#serasa_occurrences .linha {
+     width: 5em;
+}
+
+#serasa_occurrences .linha pre {
+     width: 5em;
+     overflow-x: scroll;
+}
+table#orders tr.liquidated td {
+    background-color: #ff6666;
+}
+
+.str_input{
+  width: 820px; 
+  height: 520px;
+}
+
+.wrong_text{
+  color: #ca0005;
+}
+
+.navbar{
+  background: #000000;
+}
+
+a.navbar-brand{
+    background: #000000;
+border-bottom: #000000;
+}
+

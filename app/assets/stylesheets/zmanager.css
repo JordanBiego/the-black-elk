@@ -1,0 +1,201 @@
+.field_with_errors {
+  display: inline;
+}
+
+.top60 {
+  margin-top: 60px;
+}
+
+.top1-5em {
+  margin-top: 1.5em;
+}
+
+.logo {
+  width: 120px;
+  height: 50px;
+}
+
+.logo2 {
+  width: 312px;
+  height: 132px;
+}
+
+.logo_gcbrasil {
+  height: 162px
+}
+
+.creditag {
+  margin-top: 100px;
+  height: 300px;
+}
+
+.logo_seara {
+  height: 246px;
+}
+
+.logo-smo {
+  width: 312px;
+  height: 132px;
+  margin-top: 20px;
+}
+
+.login-box input[placeholder],
+[placeholder],
+[placeholder] {
+  color: rgb(0, 0, 0) !important;
+}
+
+#page-title {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 95%;
+}
+
+body {
+  margin-bottom: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  /* same height as the margin to the bottom of the body */
+}
+
+a.navbar-brand:hover {
+  background: none;
+}
+
+.navbar {
+  background: #112C11;
+}
+
+.navbar-nav {
+  margin-top: 1em;
+}
+
+a.navbar-brand {
+  background: #112C11;
+}
+
+.box .box-header {
+  background: #112C11;
+}
+
+div.box .box-header h2 i {
+  background: #112C11;
+  margin: -10px 10px -10px -20px;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+  background-color: #112C11;
+  border-color: #112C11;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  color: #112C11;
+}
+
+a:focus,
+.pagination>li>span:focus {
+  color: #112C11;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+  color: #112C11;
+}
+
+.navbar .nav li.dropdown.open>.dropdown-toggle,
+.navbar .nav li.dropdown.active>.dropdown-toggle,
+.navbar .nav li.dropdown.open.active>.dropdown-toggle {
+  background-color: #333;
+}
+
+#sidebar-left {
+  background: #112C11;
+}
+
+footer {
+  background: #112C11;
+}
+
+.btn-primary {
+  border-color: #235623 !important;
+  background-color: #235623 !important;
+}
+
+body {
+  background: #112C11 none repeat scroll 0% 0%;
+  color: #112C11;
+}
+
+.nav-tabs.nav-stacked>li.active>a,
+.nav-tabs.nav-stacked>li>ul>li.active>a {
+  background: #235623;
+}
+
+.dropdown-menu {
+  border: #235623;
+}
+
+.nav-tabs.nav-stacked>li>a:hover,
+.nav-tabs.nav-stacked>li>ul>li>a:hover {
+  background: #235623;
+}
+
+.navbar .nav li.dropdown.open>.dropdown-toggle,
+.navbar .nav li.dropdown.active>.dropdown-toggle,
+.navbar .nav li.dropdown.open.active>.dropdown-toggle {
+  background-color: #235623;
+}
+
+a.navbar-brand {
+  background: #112C11;
+  border-bottom: #112C11;
+}
+
+span.hst-atual {
+  margin-left: 0.5em;
+  text-align: right;
+  float: right;
+}
+
+.sidebar-nav>ul .serasamenu {
+  white-space: normal;
+}
+
+#serasa_occurrences .linha {
+  width: 5em;
+}
+
+#serasa_occurrences .linha pre {
+  width: 5em;
+  overflow-x: scroll;
+}
+
+table#orders tr.liquidated td {
+  background-color: #235623;
+}
+
+.str_input {
+  width: 820px;
+  height: 520px;
+}
+
+.wrong_text {
+  color: #ca0005;
+}
