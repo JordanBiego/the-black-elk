@@ -1,0 +1,115 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap
+ *= require bootstrap-datetimepicker
+ *= require rails_bootstrap_forms
+ *= require select2
+ *= require select2-bootstrap
+ *= require_tree
+ *= require_self
+ */
+
+/* fix acessibilidade  */
+html header.navbar > .container a.navbar-brand {
+  padding: 0 !important;
+  margin: 6px 0 0 0;
+}
+
+header.navbar .nav > li > a:hover,
+header.navbar .nav > li > a:focus {
+  background: none !important;
+}
+
+.header-nav a.btn.account {
+  padding: 8px 5px 2px 5px !important;
+}
+
+/* fix dropdown-menu  */
+
+.navbar-nav > li > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+/* hover focus acessibilidade  */
+
+html header.navbar > .container a.navbar-brand:focus,
+html a.dropmenu:focus,
+html header.navbar > .container a.navbar-brand:hover,
+html header.navbar > .container a.navbar-brand:active,
+header.navbar .nav > li > a:hover,
+header.navbar .nav > li > a:focus,
+html .nav-tabs.nav-stacked > li > ul > li > a:focus {
+  outline: 2px solid #fff !important;
+  outline: 2px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.form-control:focus,
+.btn:focus,
+select:focus {
+  outline: 2px solid #000 !important;
+  outline: 2px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.skip-link {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  left: 50%;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-100%);
+  border-radius: 0 0 10px 10px;
+  padding: 5px 15px;
+}
+
+.skip-link a {
+  padding: 5px;
+  text-decoration: none !important;
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+
+.skip-link:focus-within {
+  transform: translateY(0%);
+}
+
+.has-error .form-control {
+  border-color: #a94442 !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.8) !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.8) !important;
+}
+
+#billing_bar_code_info {
+  margin-top: 20px;
+}
+
+#billing_bar_code_info .jumbotron {
+  padding: 20px;
+}
+
+#billing_bar_code_info .jumbotron ul {
+  margin-bottom: 0;
+}
