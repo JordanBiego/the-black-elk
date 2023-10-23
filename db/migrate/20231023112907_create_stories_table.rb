@@ -1,7 +1,8 @@
 class CreateStoriesTable < ActiveRecord::Migration[7.0]
   def up
     create_table :stories do |t|
-      t.string :title
+      t.text :title
+      t.text :author
       t.text :description
 
       t.timestamps

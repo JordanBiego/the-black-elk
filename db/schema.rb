@@ -44,7 +44,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_23_120525) do
   end
 
   create_table "stories", force: :cascade do |t|
-    t.string "title"
+    t.text "title"
+    t.text "author"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
