@@ -9,10 +9,9 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.text    :nickname, unique: true
       t.date    :birthday
       t.text    :curremt_story
-      t.text    :current_progress
+      t.text    :last_saved_code
       t.text    :avatar_key
       t.text    :avatar_url
-      t.text    :status
       t.boolean :admin, default: false
       t.boolean :active, default: false
 
