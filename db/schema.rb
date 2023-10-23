@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_23_114218) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_23_120525) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -32,6 +32,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_23_114218) do
     t.integer "chapter_id"
     t.integer "outcome_number"
     t.text "content"
+  end
+
+  create_table "save_slots", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "chapter_id"
+    t.text "save_name"
+    t.string "save_code"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "stories", force: :cascade do |t|
