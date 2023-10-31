@@ -1,6 +1,7 @@
 <div class="row d-flex justify-content-center align-items-center">
   <div class="col-12 col-md-8 col-lg-6 col-xl-5">
     <%- if controller_name != 'sessions' %>
+      <p class="text-center"> Already have an account? </p>
       <div class="card shadow-2-strong" style="border-radius: 1rem;">
         <%= link_to "Log in", new_session_path(resource_name), class: 'btn btn-primary btn-lg btn-block' %>
       </div>
