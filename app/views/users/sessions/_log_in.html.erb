@@ -1,0 +1,32 @@
+<% if flash[:alert] %>
+  <div class="alert alert-danger alert-dismissible fade show">
+    <i class="fa fa-exclamation-triangle"></i>
+    <%= content_tag(:message, flash[:alert], :class => "alert")%>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<% end %>
+
+<h3 class="mb-5">Sign in</h3>
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form-outline mb-4">
+      <%= f.input :username,
+                  required: false,
+                  autofocus: true,
+                  as: :string %>
+    </div>
+    <div class="form-outline mb-4">
+      <%= f.input :password,
+                  required: false,
+                  input_html: { autocomplete: "current-password" } %>                
+      </div>
+    <div class="form-check d-flex justify-content-start mb-4">
+      <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+    </div>
+    <div class="form-actions">
+        <%= f.button :submit, "Log in", class: 'btn btn-primary btn-lg btn-block' %>
+    </div>
+  <% end %>
+  
+<hr class="mb-4">
+  <%= render "users/shared/links" %>
+</hr>
