@@ -1,9 +1,9 @@
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+        #  :confirmable, :lockable, :timeoutable, authentication_keys: [:username]
 
-  validates_presence_of :name, :nickname, :birthday, :encrypted_password
-  validates_uniqueness_of :nickname, uniqueness: { scope: :name, message: 'Nickname already taken!' }
+  validates_presence_of :name, :username, :birthday, :encrypted_password
+  validates_uniqueness_of :username, uniqueness: { scope: :name, message: 'Username already taken!' }
 end
