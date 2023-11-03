@@ -5,10 +5,25 @@
 </blockquote>
 <div class="card shadow-2-strong" style="border-radius: 1rem;">
   <div class="card-body p-5 text-center">
-
+    <% if @saved_games != nil %>
+      <% @saved_games.each do |s| %>
+        <div class='row'>
+          <p> Save Name: <%= s.save_name %> </p>
+          <p> Story: <%= s.story.title %> </p>
+          <p> Chapter: <%= s.chapter_id %> </p>
+          <p> Saved at: <%= s.created_at %> </p>
+          <%= link_to 'Load', home_game_index_path(s.id), class: 'btn btn-primary btn-lg btn-block' %>
+        </div>
+        </br>
+      <% end %>
+    <% else %>
+      <div class='row'>
+        <p> No saved progress found. </p>
+      </div>
+    <% end %>
   </div>
 </div>
 </br>
 <div class="col-md-2 d-flex justify-content-center align-items-left">
-  <%= link_to 'Home', root_path, class: 'btn btn-primary btn-lg btn-block' %>
+  <%= link_to 'Back', home_main_menu_index_path, class: 'btn btn-primary btn-lg btn-block' %>
 </div>

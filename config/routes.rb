@@ -12,7 +12,9 @@ Rails.application.routes.draw do
 
     namespace :game do
       get 'index'
-      get 'show'
+      get 'start'
+      get 'choice'
+      get 'next_chapter'
     end
   end
 

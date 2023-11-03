@@ -1,0 +1,13 @@
+<blockquote class="blockquote">
+  <h1>The Black Elk</h1>
+</blockquote>
+<div class='row'>
+  <h2> <%= @chosen_story.title %> </h2>
+</div>
+<div class='row'>
+  <p> <%= @chosen_story.description %> </p>
+</div>
+
+<div class='mb-4'>
+  <%= link_to "Start", home_game_start_path(id: @chosen_story.id), class: 'btn btn-primary btn-lg btn-block' %>
+</div>
