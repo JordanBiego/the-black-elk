@@ -6,5 +6,17 @@ Rails.application.routes.draw do
 
   namespace :home do
     get 'main_menu/index'
+    get 'main_menu/new_game'
+    get 'main_menu/load_game'
+    get 'main_menu/continue_game'
+
+    namespace :game do
+      get 'index'
+      get 'show'
+    end
+  end
+
+  namespace :users do
+    get 'profiles/index'
   end
 end

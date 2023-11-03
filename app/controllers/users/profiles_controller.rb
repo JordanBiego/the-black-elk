@@ -1,22 +1,10 @@
-module Home
-  class MainMenuController < ApplicationController
+module Users
+  class ProfilesController < ApplicationController
     before_action :validate_access
 
     def index
       @user = current_user
-      render 'home/main_menu/index'
-    end
-
-    def new_game
-      render 'home/main_menu/options/new_game'
-    end
-
-    def load_game
-
-    end
-
-    def continue_game
-
+      render 'users/profiles/index'
     end
 
     private
