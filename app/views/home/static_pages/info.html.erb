@@ -6,14 +6,18 @@
     <figcaption class="blockquote-footer">
       W.I.P. -  <cite title="Source Title"><b>HollowTech</b></cite>
     </figcaption>
-    <% if user_signed_in? %>
-      <li>
-      <%= link_to('Logout', destroy_user_session_path) %>        
-      </li>
-    <% else %>
-      <li>
-      <%= link_to('Login', new_user_session_path) %>  
-      </li>
-    <% end %>
+    </br>
+    <div class="card shadow-2-strong" style="border-radius: 1rem;">
+      <div class="card-body p-5 text-center">
+        <% if user_signed_in? %>
+          <%= link_to 'Main Menu', home_main_menu_index_path, class:'btn btn-primary btn-lg btn-block' %>
+          </br>
+          </br>
+          <%= link_to 'Logout', destroy_user_session_path, class:'btn btn-primary btn-lg btn-block' %>
+        <% else %>
+          <%= link_to 'Login', new_user_session_path, class:'btn btn-primary btn-lg btn-block' %>  
+        <% end %>
+      </div>
+    </div>
   </figure>
 </div>

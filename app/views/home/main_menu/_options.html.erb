@@ -1,0 +1,21 @@
+<% if flash[:alert] %>
+  <div class="alert alert-danger alert-dismissible fade show">
+    <i class="fa fa-exclamation-triangle"></i>
+    <%= content_tag(:message, flash[:alert], :class => "alert")%>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<% end %>
+
+<blockquote class="blockquote">
+  <h1>The Black Elk</h1>
+</blockquote>
+<div class="card shadow-2-strong" style="border-radius: 1rem;">
+  <div class="card-body p-5 text-center">
+  
+  
+  </div>
+</div>
+</br>
+<div class="col-md-2 d-flex justify-content-center align-items-left">
+  <%= link_to 'Back', root_path, class: 'btn btn-primary btn-lg btn-block' %>
+</div>
