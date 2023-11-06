@@ -28,6 +28,12 @@ module Home
       render 'home/game/show'
     end
 
+    def quick_save
+      save_game(outcome_id: params[:id])
+      flash[:notice] = 'Game saved!'
+      redirect_back(fallback_location: main_menu_index_path)
+    end
+
     private
 
     def set_story
@@ -36,11 +42,16 @@ module Home
 
     def set_chapter_and_choices(id)
       @chapter = Chapter.find_by(id: id)
-      @choices = Choice.where(chapter_id: @chapter.id)
+      @choices = Choice.where(chapter_id: @chapter.id) unless @chapter.ending
     end
 
     def set_outcome
       @outcome = Outcome.find_by(choice_id: params[:choice_id].to_i)
+    end
+
+    def save_game(outcome_id: nil)
+      service = Game::SaveGameService.new(outcome_id: outcome_id)
+      service.save_game
     end
 
     def validate_access

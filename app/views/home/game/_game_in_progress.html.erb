@@ -14,7 +14,7 @@
   <% if @choices %>
     <% @choices.each do |choice| %>
       <div class='col-md-4'>
-        <%= link_to "Choice #{choice.choice_number}", home_game_choice_path(choice_id: choice.id), class: 'btn btn-primary btn-lg btn-block' %>
+        <%= link_to "#{choice.content}", home_game_choice_path(choice_id: choice.id), class: 'btn btn-primary btn-lg btn-block' %>
       </div>
     <% end %>
   <% else %>
