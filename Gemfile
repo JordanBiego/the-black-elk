@@ -15,6 +15,7 @@ gem 'rails', '~> 7.0.7', '>= 7.0.7.2'
 gem 'ransack'
 gem 'redis', '~> 4.0'
 gem 'turbo-rails'
+gem 'securerandom'
 # gem "kredis"
 
 # Authentication

@@ -14,7 +14,7 @@ Rails.application.routes.draw do
       get 'index'
       get 'start'
       get 'choice'
-      get 'next_chapter'
+      get 'continue'
     end
   end
 

@@ -295,6 +295,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    securerandom (0.2.2)
     selenium-webdriver (4.10.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -383,6 +384,7 @@ DEPENDENCIES
   rails (~> 7.0.7, >= 7.0.7.2)
   ransack
   redis (~> 4.0)
+  securerandom
   selenium-webdriver
   simple_form
   solargraph
