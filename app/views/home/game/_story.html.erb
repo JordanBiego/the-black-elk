@@ -1,0 +1,21 @@
+<blockquote class="blockquote">
+  <h1>The Black Elk</h1>
+</blockquote>
+<div class="card shadow-2-strong" style="border-radius: 1rem;">
+  <div class="card-body p-5 text-center">
+    <div class='row'>
+      <h2> <%= @chosen_story.title %> </h2>
+    </div>
+    <div class='row'>
+      <p> <%= @chosen_story.description %> </p>
+    </div>
+    </br>
+    <div class='row'>
+      <%= link_to "Start", home_game_start_path(id: @chosen_story.id), class: 'btn btn-primary btn-lg btn-block' %>
+    </div>
+  </div>
+</div>
+</br>
+<div class="col-md-2 d-flex justify-content-center align-items-left">
+  <%= link_to 'Back', home_main_menu_new_game_path, class: 'btn btn-primary btn-lg btn-block' %>
+</div>

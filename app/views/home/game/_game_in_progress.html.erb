@@ -1,0 +1,40 @@
+<% if @chapter%>
+  <blockquote class="blockquote">
+    <h1><%= @chapter.story.title %></h1>
+  </blockquote>
+    <div class="card shadow-2-strong" style="border-radius: 1rem;">
+      <div class="card-body p-5 text-center">
+          <div class='row'>
+            <h3> <%= @chapter.title %> </h3>
+          </div>
+          </br>
+          <div class='row'>
+            <p> <%= @chapter.content %> </p>
+          </div>
+      </div>
+    </div>
+<% end %>
+</br>
+<div class='row'>
+  <% if @choices %>
+    <% @choices.each do |choice| %>
+      <div class='col-sm-4 justify-content-center align-items-right'>
+        <%= link_to "#{choice.content}", home_game_choice_path(choice_id: choice.id), class: 'btn btn-primary btn-lg btn-block' %>
+      </div>
+    <% end %>
+  <% else %>
+    <div class="card shadow-2-strong" style="border-radius: 1rem;">
+      <div class="card-body p-5 text-center">
+        <div class='row'>
+          <p> <%= @outcome.content %> </p>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class="col-md-12 justify-content-center align-items-right">
+      </br>
+        <%= link_to "Continue...", home_game_continue_path(next_chapter_number: @outcome.next_chapter_number, next_chapter_part: @outcome.next_chapter_part), class: 'btn btn-primary btn-lg btn-block' %>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,21 @@
+<% if @chapter%>
+  <blockquote class="blockquote">
+    <h1><%= @chapter.story.title %></h1>
+  </blockquote>
+  <div class='row'>
+    <h3> <%= @chapter.title %> </h3>
+  </div>
+  <div class='row'>
+    <p> <%= @chapter.content %> </p>
+  </div>
+<% end %>
+
+<div class='row'>
+  <p> GAME OVER </p>
+  </br>
+</div>
+<div class='row'>
+  <div class="col-md-12">
+    <%= link_to 'Main Menu', home_main_menu_index_path, class: 'btn btn-primary btn-lg btn-block' %>
+  </div>
+</div>
